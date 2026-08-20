@@ -631,15 +631,104 @@ img { display: block; max-width: 100%; }
   margin: 12px 0 16px;
   line-height: 1.75;
 }
-.footer-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.footer-badges { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .footer-badge {
-  font-size: 10px;
-  font-weight: 700;
-  background: rgba(255,255,255,.05);
-  color: var(--text-muted);
-  padding: 4px 10px;
-  border-radius: 99px;
-  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,.22);
+  border-radius: 6px;
+  height: 38px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+/* 18+ – outlined circle */
+.footer-badge-18 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.55);
+  color: #e8e8e8;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 0;
+  flex-shrink: 0;
+  letter-spacing: -.4px;
+  background: transparent;
+}
+
+/* SRIJ – white card, dark blue italic */
+.footer-badge-srij {
+  background: #fff;
+  border: 1.5px solid #d0d8e8;
+  border-radius: 5px;
+  padding: 0 11px;
+  height: 38px;
+  color: #0a2d6e;
+  font-size: 15px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: .01em;
+}
+
+/* jogo responsável – light border, circular arrows + text */
+.footer-badge-jogo {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,.22);
+  border-radius: 6px;
+  padding: 0 11px;
+  height: 38px;
+  gap: 6px;
+  color: #d4d4d4;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+.footer-badge-jogo svg { flex-shrink: 0; opacity: .9; }
+
+/* CS ICAD – light border, globe icon + text */
+.footer-badge-icad {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,.22);
+  border-radius: 6px;
+  padding: 0 11px;
+  height: 38px;
+  gap: 7px;
+  color: #d4d4d4;
+}
+.footer-badge-icad svg { flex-shrink: 0; opacity: .9; }
+.footer-badge-icad .icad-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-align: left;
+}
+.footer-badge-icad .icad-wrap span {
+  font-size: 9px;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+.footer-badge-icad .icad-wrap strong {
+  font-size: 12px;
+  font-weight: 900;
+  color: #e0e0e0;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.footer-cert-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
 }
 .footer-links { flex: 1; display: flex; gap: 40px; }
 .footer-col { display: flex; flex-direction: column; gap: 10px; }
