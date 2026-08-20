@@ -722,6 +722,13 @@ img { display: block; max-width: 100%; }
   letter-spacing: .05em;
   text-transform: uppercase;
 }
+a.footer-badge {
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity .18s, border-color .18s;
+}
+a.footer-badge:hover { opacity: .75; border-color: rgba(255,255,255,.45); }
+a.footer-badge-srij:hover { opacity: .85; }
 
 .footer-cert-logos {
   display: flex;
