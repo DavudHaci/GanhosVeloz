@@ -89,12 +89,18 @@ img { display: block; max-width: 100%; }
 .logo-check {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  font-weight: 700;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 800;
   color: var(--text);
+  letter-spacing: -.01em;
 }
-.logo-check svg { color: var(--orange); width: 18px; height: 18px; }
+.logo-check svg { width: 22px; height: 22px; flex-shrink: 0; }
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
 
 /* Nav */
 .nav {
